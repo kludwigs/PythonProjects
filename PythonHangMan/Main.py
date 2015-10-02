@@ -1,18 +1,21 @@
 import startprompt
 import wordlist
 import validateguess
+import sys
+
+
 
 print("Welcome to Karl's hang man game")
-#print("Would you like to play?")
+print("Would you like to play?")
 
-#answer = input("Type y or n and hit 'Enter'.\n").lower()
+answer = input("Type y or n and hit 'Enter'.\n").lower()
 
-#action = startprompt.hangmanstartprompt(answer)
+action = startprompt.hangmanstartprompt(answer)
 
-#if action is True:
- #   print("Okay let's get going")
-#else:
- #   quit
+if action is True:
+   print("Okay let's get going")
+else:
+   sys.exit()
 
 # save the word and an array with the same length    
 theword = wordlist.getwordlistfromfile("wordlist.txt")
