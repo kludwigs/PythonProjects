@@ -4,7 +4,7 @@ answer = input("Type left or right and hit 'Enter'.\n").lower()
 print("you entered--\t" + answer + "\n");
 if answer =="left":
     print("Sorry, you chose poorly. You lose")
-if answer=="right":
+elif answer=="right":
     print("You choose wisely. You win")
 else:
     print("I don't understand what you're saying")
