@@ -38,7 +38,7 @@ while number_of_guesses > 0 and win == False:
         print("That's not even a character! Try again")
     else:
         print("You're going to guess " + guess)
-        if (len(guess) > 1):
+        if len(guess) > 1:
             if not validateguess.checkword(guess, theword):
                 print("Oops, that's not right")
                 number_of_guesses -= 1
@@ -58,6 +58,6 @@ while number_of_guesses > 0 and win == False:
             else:
                 number_of_guesses -= 1
     print("You have ", number_of_guesses, " remaining...")
-if (win == False):
+if win == False:
     print("Word was " + theword + ".")
 print("Game over...")
